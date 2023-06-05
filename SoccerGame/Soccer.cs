@@ -169,7 +169,7 @@ namespace SoccerGame
 
         private (int, Player) Defence(Team teamA, Team teamB, Player player)
         {
-            Console.WriteLine("せーぶや");
+            Console.WriteLine("せーぶでやんす");
             
             Player myGK = teamA.GetGK();
 
@@ -197,7 +197,7 @@ namespace SoccerGame
 
         private (int, Player) MiddleDefence(Team teamA, Team teamB, Player player, int state)
         {
-            Console.WriteLine("しゅびやピヨ");
+            Console.WriteLine("しゅびだピヨ");
 
             Player myPlayer = state == 1 ? teamA.GetDF() : teamA.GetMF();
 
@@ -227,7 +227,7 @@ namespace SoccerGame
         }
         private (int, Player) MiddleAttack(Team teamA, Team teamB, Player player, int state)
         {
-            Console.WriteLine("せめやピヨ");
+            Console.WriteLine("せめるピヨ");
 
             Player enemyPlayer = state == 2 ? teamB.GetDF() : teamB.GetMF();
             int command = rnd.Next(middleDefenceCommand.Length);

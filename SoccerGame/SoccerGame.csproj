@@ -54,8 +54,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="team\チーム影山.txt" />
+    <Content Include="team\五条勝.txt" />
     <Content Include="team\栗松イレブン.txt" />
+    <Content Include="team\かみなりもん.txt" />
     <Content Include="team\沿道イレブン.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

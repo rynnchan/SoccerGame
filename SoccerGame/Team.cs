@@ -29,27 +29,26 @@ namespace SoccerGame
             Console.WriteLine(Name);
             var position_num = Players.GroupBy(x => x.Position).Select(x =>  x.Count()).ToList();
             int max_position_num = position_num.Max();
-            Console.WriteLine(max_position_num);
 
-            Console.Write(new String(' ', (max_position_num - position_num[3]) * 5));
+            Console.Write("     " + new String(' ', (max_position_num - position_num[3]) * 4));
             foreach (Player p in GetFWs())
             {
                 Console.Write($"{p.ToString()} ");
             }
             Console.WriteLine();
-            Console.Write(new String(' ', (max_position_num - position_num[2]) * 5));
+            Console.Write("     " + new String(' ', (max_position_num - position_num[2]) * 4));
             foreach (Player p in GetMFs())
             {
                 Console.Write($"{p.ToString()} ");
             }
             Console.WriteLine();
-            Console.Write(new String(' ', (max_position_num - position_num[1]) * 5));
+            Console.Write("     " + new String(' ', (max_position_num - position_num[1]) * 4));
             foreach (Player p in GetDFs())
             {
                 Console.Write($"{p.ToString()} ");
             }
             Console.WriteLine();
-            Console.Write(new String(' ', (max_position_num - position_num[0]) * 5));
+            Console.Write("     " + new String(' ', (max_position_num - position_num[0]) * 4));
             foreach (Player p in GetGKs())
             {
                 Console.Write(p.ToString());

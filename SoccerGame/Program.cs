@@ -10,7 +10,7 @@ namespace SoccerGame
     {
         static void Main(string[] args)
         {
-            Soccer soccer = new Soccer(3);
+            Soccer soccer = new Soccer(1);
             soccer.Play();
         }
     }
